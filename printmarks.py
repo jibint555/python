@@ -14,7 +14,7 @@ total=0
 for i in marks:
     total+=i
 print(f"total is {total}")
-percentage=((total/800)*100)
+percentage=((total/len(subjects)))
 print(f"percentage is {percentage}")
 if(percentage>=80):
     print("Excellent, You secured a distinction, really appreciated, keep going like this")
