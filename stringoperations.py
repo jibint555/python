@@ -24,21 +24,22 @@ def palindrome_check(data):
     cleaned_data=data.replace(" ", "").lower()
     return cleaned_data == cleaned_data[::-1]
 
+if __name__ =='__main__':
+     data=input("Enter the string to be converted:\t")
+     option=input("choose your option: 1 - > convert to uppercase, 2 - > convert to lowercase, 3 - > is it a palindrome: \t")
 
-data=input("Enter the string to be converted:\t")
-option=input("choose your option: 1 - > convert to uppercase, 2 - > convert to lowercase, 3 - > is it a palindrome: \t")
-
-if option == '1':
-    output=to_upper(data)
-    print(f"\nuppercase of the entered string{data:>10} is {output}")
-elif option == '2':
-    output=to_lower(data)
-    print(f"\nlowercase of the entered string{data:>10} is {output}")    
-elif option == '3':
-    if palindrome_check(data) == True:
+     if option == '1':
+         output=to_upper(data)
+         print(f"\nuppercase of the entered string{data:>10} is {output}")
+     elif option == '2':
+         output=to_lower(data)
+         print(f"\nlowercase of the entered string{data:>10} is {output}")    
+     elif option == '3':
+         if palindrome_check(data) == True:
         
-        print(f"\n{data:>10} is a palindrome")
-    else:
-        print(f"\n{data:>10} is not a palindrome")
-else:
-    print("\nInvalid selection")
+             print(f"\n{data:>10} is a palindrome")
+         else:
+             print(f"\n{data:>10} is not a palindrome")
+     else:
+         print("\nInvalid selection")
+
