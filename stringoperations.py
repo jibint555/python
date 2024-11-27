@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 def to_upper(data):
+    '''
+    Converting string to GIBIN upperacse
+    '''
     upper_str=''
     for i in data:
         if i.isalpha() and ord(i) in range(97, 123):
@@ -7,10 +10,11 @@ def to_upper(data):
         else:
              upper_str+=i
     return upper_str
-'''
-function to convert the string into lowercase
-'''
+
 def to_lower(data):
+    '''
+    convert string to lowercase
+    '''
     lower_str=''
     for s in data:
         if s.isalpha() and ord(s) in range(65, 91):
